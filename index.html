@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lyft</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/materialize/css/materialize.min.css">
+  <script src="assets/materialize/js/jquery.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+  <section class="container" id="splash">
+    <div class="row">
+      <img class="img-responsive col s8  offset-s2" id="logo-splash" src="assets/img/logo-white.png" alt="">
+    </div>
+  </section>
+
+  <section class="container" id="main-page">
+    <div class="row">
+      <img class="img-responsive col s4  offset-s4" src="assets/img/logo-white.png" alt="">
+    </div>
+
+    <div class="row">
+      <img class="img-responsive col s10  offset-s1" id="lyftlyfe" src="assets/img/lyft-lyfe.svg" alt="">
+    </div>
+
+    <div class="row" id="btns-main">
+      <button class="col s4  offset-s2 btn-main" type="button" name="button">LOG IN</button>
+      <button class="col s4  btn-main" type="button" name="button" id="sign-up">SIGN UP</button>
+    </div>
+  </section>
+
+  <section class="container" id="signUp-page">
+    <div class="row mb-0" >
+       <i class="material-icons col s2" id="return-main">keyboard_arrow_left</i>
+    <div class="col-8" >
+      <div class="row">
+        <h5 class="col s7" id="title-sgn">Sign Up</h5>
+        <br>
+        <p class="col s7">Join now for free ride credit</p>
+      </div>
+    </div>
+    </div>
+    <hr>
+
+    <div class="row mb-0">
+      <div class="input-field col s4 offset-s1">
+        <dl id="sample" class="dropdown flags">
+          <dt><a href="#"><span>Country</span></a></dt>
+          <dd>
+            <ul>
+              <li><a href="#" id="imgcol"><img class="flag" style="width:50px;" src="assets/img/colombia.png" alt="" /><span class="value"></span></a></li>
+              <li><a href="#" id="imgper"><img class="flag" style="width:50px;" src="assets/img/peru.png"><span class="value"></span></a></li>
+              <li><a href="#" id="imgmex"><img class="flag" style="width:50px;" src="assets/img/mexico.jpg"><span class="value"></span></a></li>
+              <li><a href="#" id="imgusa"><img class="flag" style="width:50px;" src="assets/img/usa.png"><span class="value"></span></a></li>
+            </ul>
+          </dd>
+        </dl>
+</div>
+
+<div class="col s1" id="codes">
+    <p id="colombia">+57</p>
+    <p id="peru">+51</p>
+    <p id="mexico">+52</p>
+    <p id="usa">+001</p>
+</div>
+
+           <div class="input-field col s5">
+             <input id="phone" type="tel" class="validate" placeholder="phone number">
+           </div>
+       </div>
+
+
+       <div class="row">
+         <div class="col col s8 offset-s2">
+           <p id="text">We'll send a text to verify your phone</p>
+         </div>
+       </div>
+
+       <div class="row">
+         <div class="col s12">
+           <a class="btn disabled" id="next">Next</a>
+         </div>
+       </div>
+  </section>
+
+
+<section class="container" id="verify">
+  <div class="row mb-0" >
+     <i class="material-icons col s2" id="return-sign">keyboard_arrow_left</i>
+  <div class="col-8" >
+    <div class="row">
+      <h5 class="col s10 offset-s2">Verify phone number</h5>
+      <br>
+      <p class="col s7 offset-s2">Join now for free ride credit</p>
+    </div>
+  </div>
+  </div>
+  <hr>
+    <div class="row">
+       <div class="col s12 offset-s4">
+         LAB-
+         <div class="input-field inline">
+           <input class="col s2" id="lab" type="email" class="validate">
+         </div>
+       </div>
+     </div>
+
+     <div class="row">
+       <div class="col s8 offset-s2">
+         <p id="text">Enter the code sent to +52</p>
+       </div>
+     </div>
+
+     <div class="row">
+       <div class="col s12">
+         <a class="btn col s4 offset-s4" id="resend">resend</a>
+       </div>
+     </div>
+
+     <div class="row" id="row-verify">
+       <div class="col s12">
+         <a class="btn col s12 disabled" id="next-verify">Next</a>
+       </div>
+     </div>
+  </section>
+
+  <section class="container" id="signUp-page2">
+    <div class="row mb-0" >
+       <i class="material-icons col s2" id="return-verify">keyboard_arrow_left</i>
+    <div class="col-8" >
+      <div class="row">
+        <h5 class="col s7" id="title-sgn">Sign Up</h5>
+        <br>
+        <p class="col s7">Join now for free ride credit</p>
+      </div>
+    </div>
+    </div>
+    <hr>
+    <div class="row">
+       <form class="col s12">
+         <div class="row">
+           <div class="input-field col s6">
+             <i class="material-icons prefix">person_outline</i>
+             <input id="first_name" type="text" class="validate" placeholder="name">
+           </div>
+           <div class="input-field col s6">
+             <input id="last_name" type="text" class="validate" placeholder="last name">
+           </div>
+         </div>
+         <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">email</i>
+          <input id="email" type="email" class="validate" placeholder="email">
+        </div>
+      </div>
+    </form>
+    </div>
+
+    <div class="row">
+      <form action="#">
+   <p>
+     <input type="checkbox" id="test5" />
+     <label for="test5">I agree to Lyft's <a href="">Terms of service</a></label>
+   </p>
+   </form>
+    </div>
+
+    <div class="row" id="row-sign2">
+      <div class="col s12">
+        <a class="btn col s12 disabled" id="next-sign2">Next</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="end">
+    <div class="row">
+      <img class="img-responsive col s8  offset-s2" id="logo-end" src="assets/img/logo-white.png" alt="">
+    </div>
+    <div class="row">
+      <a href="" id="tick"><img class="img-responsive col s8  offset-s2"  src="assets/img/tick.png" alt=""></a>
+    </div>
+  </section>
+
+
+  <script src="assets/js/app.js" charset="utf-8"></script>
+</body>
+
+</html>
